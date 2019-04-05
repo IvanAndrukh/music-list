@@ -1,8 +1,8 @@
 {
-  "name": "musiclist",
+  "name": "music-list",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development nodemon .",
@@ -11,7 +11,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.4.21",
+    "password-hash": "^1.2.2",
+    "secure-env": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
