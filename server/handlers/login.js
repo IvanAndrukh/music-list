@@ -19,7 +19,7 @@ module.exports = async (req, res, next) => {
 
 		return res.status(200).json({ login: user.login, token });
 	} catch (error) {
-		res.status(400).send(error.message);
+		res.status(400);
 		next(error);
 	}
 };

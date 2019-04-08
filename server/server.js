@@ -14,9 +14,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 
+app.get('/', handlers.greeting);
+
 app.post('/register', handlers.register);
 app.post('/login', handlers.login);
 
 app.use(authentication);
+
+app.get('/music', handlers.searchMusic);
 
 app.listen(8000, () => console.log('App listening on port 8000!'));

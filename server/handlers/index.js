@@ -1,4 +1,6 @@
 module.exports = {
 	register: require('./register'),
-	login: require('./login')
+	login: require('./login'),
+	searchMusic: require('./search-music'),
+	greeting: require('./greeting')
 };

@@ -4,7 +4,6 @@
   "description": "",
   "main": "server/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=development nodemon .",
     "lint": "eslint ."
   },
@@ -16,6 +15,7 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.4.21",
     "password-hash": "^1.2.2",
+    "request": "^2.88.0",
     "secure-env": "^1.0.0"
   },
   "devDependencies": {

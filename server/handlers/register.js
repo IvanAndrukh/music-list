@@ -14,7 +14,7 @@ module.exports = async (req, res, next) => {
 
 		return res.status(201).send('The user was successfully created');
 	} catch (error) {
-		res.status(400).send(error.message);
+		res.status(400);
 		next(error);
 	}
 };
